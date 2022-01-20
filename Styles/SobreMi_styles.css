@@ -1,0 +1,194 @@
+.seccion-informacion{
+    width: 100%;
+    height: 85%; /*Para evitar que haya scroll*/
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 2vw;
+}
+
+.contenedor-izquierda{
+    width: 45%;
+}
+
+.contenedor-derecha{
+    width: 45%;
+}
+
+.contenedor-flecha2{
+    width: 10%;
+    /*transform: translate(0, -9.2vw);*/
+}
+
+.seccion-img{
+    width: 23vw;
+    padding-left: 18vw;
+    padding-top: 5vw;
+    
+}
+
+.nombre{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    margin-bottom: 0;
+    text-align: right;
+    padding-right: 5.8vw;
+    background: -webkit-linear-gradient(top, var(--color-morado), var(--color-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.apellido{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 5vw;
+    transform: translate(-0%, -5vw);
+    text-align: right;
+    padding-right: 5.4vw;
+    background: -webkit-linear-gradient(bottom, var(--color-morado), var(--color-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Linea Verical 1*/
+.v1{
+    border-left: 0.75vw solid var(--color-violet);
+    height: 17.5vw;
+    transform: translate(0, -25vw);
+    margin-left: 7.5vw;
+    margin-right: 1vw;
+}
+/*Linea Vertical 1*/
+
+.parrafo-informacion{
+    margin: 0;
+    width: 65%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7vw;
+    padding-left: 10vw;
+    transform: translate(0, -7.2vw);
+    text-align: justify;
+}
+
+.parrafo-informacion.dark{
+    color: whitesmoke;
+}
+
+.flecha{
+    width: 3.5vw;
+    height: 3.5vw;
+    box-sizing: border-box;
+    position: absolute;
+    transform: rotate(-135deg); /*Rotamos el "cuadrado" para hacer que sea una flecha hacia la derecha*/
+    top: 22vw;
+    cursor: pointer;
+    margin-left: 4vw;
+}
+
+.flecha:before {
+    content: '';
+    width: 5vw;
+    height: 5vw;
+    border-width: .8vmin .8vmin 0 0;
+    border-style: solid;
+    border-color: black;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0;
+    
+}
+
+.flecha.dark:before {
+    border-color: whitesmoke;
+}
+
+.flecha:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -5.15vw;
+    left: 1.5vw;
+    width: 100%;
+    height: 100%;
+    border-width: 0 .7vmin 0 0;
+    border-style: solid;
+    border-color: var(--color-black);
+    transform-origin: 100% 0;
+    transition:.2s ease;
+}
+
+.flecha.dark:after {
+    border-color: whitesmoke;
+}
+
+.flecha:hover::after {
+    transform: rotate(45deg);
+    border-color: var(--color-violet);
+    height: 120%;
+}
+
+.flecha:hover::before {
+    border-color: var(--color-violet);
+    transform: scale(.8);
+}
+
+/*Flecha 2*/
+
+.flecha2{
+    width: 3.5vw;
+    height: 3.5vw;
+    box-sizing: border-box;
+    position: absolute;
+    transform: rotate(45deg); /*Rotamos el "cuadrado" para hacer que sea una flecha hacia la derecha*/
+    top: 22vw;
+    cursor: pointer;
+   /* transform: translate(1vw, 0vw);*/
+}
+
+.flecha2:before {
+    content: '';
+    width: 5vw;
+    height: 5vw;
+    border-width: .8vmin .8vmin 0 0;
+    border-style: solid;
+    border-color: black;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0;
+    
+}
+
+.flecha2.dark:before {
+    border-color: whitesmoke;
+}
+
+.flecha2:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -5.15vw;
+    left: 1.5vw;
+    width: 100%;
+    height: 100%;
+    border-width: 0 .7vmin 0 0;
+    border-style: solid;
+    border-color: var(--color-black);
+    transform-origin: 100% 0;
+    transition:.2s ease;
+}
+
+.flecha2.dark:after {
+    border-color: whitesmoke;
+}
+
+.flecha2:hover::after {
+    transform: rotate(45deg);
+    border-color: var(--color-violet);
+    height: 120%;
+}
+
+.flecha2:hover::before {
+    border-color: var(--color-violet);
+    transform: scale(.8);
+}

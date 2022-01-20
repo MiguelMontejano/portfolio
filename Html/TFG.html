@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../Styles/TFG_styles.css">
+        <link rel="stylesheet" type="text/css" href="../Styles/Header.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!--Importando Flickity (para el carousel)-->
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <!--Importando Iconify-->
+        <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+        <!--Importando fuentes:-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <header>
+
+
+        <div id="logo-personal" class="logo-header" >
+            <img id="logo-img" class="header-img" onclick="redirigir_index()" src="../Imagenes/Logo_Personal_Ajustado.png" alt="Logo Personal">
+        </div>
+
+        <div class="contendor-enlaces">
+            <a href="index.html" class="contacto enlaces-header">Inicio</a>
+            <a href="SobreMi.html" class="sobremi enlaces-header">Sobre Mi</a>
+            <a href="Trabajos.html" class="enlaces-header">Trabajos</a>
+        </div>
+
+        <div class="contenedor-icono-menu" id="contenedor-modo">
+            <i class="fas fa-arrow-circle-left" id="boton_cambio" onclick="redirigir_trabajos()"></i>
+        </div>
+    
+    </header>
+
+    <div class="seccion-titulo">
+        <div class="rectangulo-fondo"></div>
+        <div class="texto-trabajo">
+            <div class="titulo-trabajo">
+                Interfaz Accesible en el ámbito de la Robótica Asistencial
+            </div>
+            <span class="brbig"></span>
+            <div class="descripcion-trabajo">
+                Trabajo de Fin de Grado realizado para la Universidad Carlos III, el trabajo consistía en el diseño, prototipado y posterior implementación de dos interfaces completamente funcionales y accesibles, estas han sido montadas en un robot que asiste tanto a los residentes como al personal en la residencia Vitalia Teatinos (Málaga, España). Obteniendo una calificación de 9.9 sobre 10.
+            </div>
+            <span class="brsmall"></span>
+            <div class="año-trabajo">
+                2021
+            </div>
+            <span class="brmedium"></span>
+            <div class="frase-trabajo">
+                - Tu corazón es libre, ten el valor de hacerle caso -
+            </div>
+        </div>
+    </div>
+
+    <div class="palabras-clave">
+        <div class="texto-colores1"><a href="#seccion-objetivos">OBJETIVOS A CUBRIR</a></div>
+        <div class="texto-colores2"><a href="#seccion-colores">COLORES USADOS</a></div>
+        <div class="texto-colores3"><a href="#seccion-tecnologias">TECNOLOGÍAS USADAS</a></div>
+        <div class="texto-colores4"><a href="#galeria">GALERÍA</a></div>
+    </div>
+
+    <div class="seccion-objetivos" id="seccion-objetivos">
+        <div class="encabezado-objetivos">OBJETIVOS A CUBRIR:</div>
+        <div class="contenido-objetivos">
+            <div class="texto-objetivos">
+                <div class="texto-explicativo-objetivos">
+                La interfaz deberá tener en cuenta las capacidades y características de los usuarios para, 
+                de este modo facilitar y fomentar su uso en el entorno de la residencia. Debemos 
+                desarrollar la interfaz poniendo nuestro foco en la accesibilidad y la simplicidad, 
+                consiguiendo así una interfaz limpia y usable que permita a las personas de la tercera la 
+                interacción con ella de una manera simple y cómoda aún a pesar de estas contar con algún 
+                tipo de discapacidad.
+                </div>
+                <div class="texto-explicativo-objetivos">
+                Para el correcto desarrollo de este trabajo será necesario el estudio y la comprensión de 
+                los principios y guías de accesibilidad. Se deberán adaptar a la situación los diferentes 
+                patrones de diseño con el fin de lidiar con las posibles discapacidades que pueden sufrir 
+                algunos de los usuarios (deterioro visual, deterioro auditivo, problemas cognitivos o de 
+                movilidad…), así como con la falta de experiencia tecnológica o un posible rechazo de la 
+                tecnología por parte de alguno de ellos.
+                </div>
+            </div>
+            <!--En vez de el micriscopio unas imagenes en columna que vayan apareciendo cuando hago scroll-->
+
+            <div class="contenedor-img-scroll">
+                <div class="imagen-scroll1"></div>
+                <div class="imagen-scroll2"></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="seccion-colores" id="seccion-colores">
+        <div class="izquierda-colores">
+            <div class="encabezado-colores">COLORES USADOS:</div>
+            <div class="titulos-colores">
+                <div class="primer-color">#FF6767</div>
+                <div class="segundo-color">#2E9AF8</div>
+                <div class="tercer-color">#F6D658</div>
+                <div class="cuarto-color">#B1F8D2</div>
+            </div>
+        </div>
+
+        <div class="derecha-colores">
+            <div class="texto-explicativo-colores">
+                A la hora de implementar la interfaz se ha 
+                diferenciado cada sección con un color diferente. Se ha tratado de asociar esos 
+                colores a las acciones que suceden en la interfaz (el rojo para representar acciones 
+                críticas o el empleo del color azul para situaciones más controladas).
+            </div>
+            <div class="texto-explicativo-colores">
+                Además, 
+                para ofrecer una mejor experiencia se emplean diferentes tonalidades de un mismo 
+                color en las pantallas para resaltar los elementos más importantes. Estos colores 
+                no deben ser demasiado saturados, en este caso hemos optado por el empleo de 
+                tonalidades pastel, con el objetivo de evitar la saturación visual, sobre todo si el 
+                usuario usa la interfaz durante largos periodos de tiempo.
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion-tecnologias" id="seccion-tecnologias">
+        <div class="tecnologias-titulo">TECNOLOGÍAS USADAS:</div>
+        <div class="contenedor-iconos-tecnologias">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <span class="iconify adobe-xd" data-icon="file-icons:adobe-xd"></span>
+            <span class="iconify adobe-photoshop" data-icon="file-icons:adobe-photoshop"></span>
+            <i class="fab fa-php"></i>
+            <span class="iconify jquery" data-icon="akar-icons:jquery-fill"></span>
+            <span class="iconify mysql" data-icon="cib:mysql"></span>
+            <span class="iconify visual-studio" data-icon="bx:bxl-visual-studio"></span>
+        </div>
+
+        <div class="contenedor-texto-tecnologias">
+            <div class="texto-explicativo-tecnologias">
+                La selección de tecnologías requirió especial atención, ya que como ya he comentado teníamos que poner
+                el foco en la accesibilidad de nuestra interfaz. Es por eso que optamos por simplificar al máximo la interfaz,
+                evitando el uso de tecnologías poco accesibles. Incluso llegamos a plantearnos el empleo de Javascript, sin embargo
+                al final se optó por su uso para una sección de subtitulado de la voz del robot y para la comunicación a través de websockets
+                con el servidor.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="galeria" id="galeria">
+        <div class="galeria-titulo">GALERÍA:</div>
+        <div class="carousel"
+        data-flickity='{"imagesLoaded": true, "autoPlay": true, "wrapAround": true, "percentPosition": false }'>
+        <img src="../Imagenes/Descansar.png" alt="pantalla descansar" />
+        <img src="../Imagenes/Despedidad.png" alt="pantalla despedida" />
+        <img src="../Imagenes/Esperando Llamada.png" alt="pantalla esperando llamada" />
+        <img src="../Imagenes/Nuevo Paciente.png" alt="pantalla nuevo paciente" />
+        <img src="../Imagenes/Saludar.png" alt="pantalla saludar" />
+      </div>
+
+    </div>
+
+    <script src="../Scripts/redireccionesTrabajos_scripts.js"></script>
+</html>
