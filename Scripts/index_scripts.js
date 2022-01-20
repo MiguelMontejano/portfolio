@@ -42,7 +42,13 @@ function redirigir_index(){
 }
 
 function redirigir_sobremi(){
-    location.href="Html/SobreMi.html"
+    if(window.location.href === "https://miguelmontejano.github.io/portfolio/"){
+        location.href="Html/SobreMi.html";
+    }
+    else{
+        location.href="SobreMi.html";
+    }
+    
 }
 
 function redirigir_trabajos(){
