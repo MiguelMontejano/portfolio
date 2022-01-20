@@ -1,0 +1,136 @@
+:root {
+    --color-violet: #AE78FF;
+    --color-white: #fdffff;
+    --color-black: #000;
+    --color-morado: #822fff;
+}
+
+html{ 
+	height: 100%;
+	width: 100%;
+	margin:0;
+}
+
+body{ 
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body.dark{
+    background: #2a2e33;
+}
+
+header {
+    /*background: #beb8a4;*/
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 4vw;
+    margin-left: 3vw;
+    /*margin-left: 20px;
+    margin-top: 10px;*/
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+.contenedor-iconomenu {
+    display: flex;
+}
+
+.contendor-enlaces {
+    /*padding-right: 1.5vw;*/
+}
+
+.fa-moon, .fa-arrow-circle-left{
+    margin-right: 3vw;
+    font-size: 1.5vw;
+    color: #001e70;
+}
+
+.fa-moon:hover, .fa-arrow-circle-left:hover{
+    color: #1200b6;
+    cursor: pointer;
+    animation: agrandar_enlaces 1s;
+}
+
+.fa-sun{
+    color: #f2ff80;
+}
+
+.fa-sun:hover{
+    color: #ff9d1d;
+    cursor: pointer;
+    animation: agrandar_enlaces 1s;
+}
+
+.enlaces-header{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.15vw;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    
+}
+
+.enlaces-header.dark{
+    color: whitesmoke;
+}
+
+.enlaces-header.dark:hover{
+    /*color: #AE78FF;*/
+}
+
+header a {
+    text-decoration: none;
+    position: relative;
+}  
+
+header a:hover {
+    text-decoration: none;
+}
+  
+header a:after {
+    border-radius: 1em;
+    border-top: .15em solid var(--color-violet);
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: -0.2em;
+    left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1);
+}
+  
+header a:hover:after {
+    right: 0;
+    
+}
+
+@media screen and (max-width:620px) {
+    header{
+        height: 10vw;
+    }
+
+    header img{
+        width: 7.5vw;
+    }
+
+    .enlaces-header{
+        font-size: 3.85vw;
+    }
+
+    .fa-moon, .fa-arrow-circle-left{
+        font-size: 4vw;
+    }
+
+}
