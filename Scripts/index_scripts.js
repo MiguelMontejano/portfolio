@@ -38,7 +38,7 @@ function changeImg(){
 
 
 function redirigir_index(){
-    location.href="Html/index.html"
+    location.href="index.html"
 }
 
 function redirigir_sobremi(){
@@ -46,15 +46,15 @@ function redirigir_sobremi(){
 }
 
 function redirigir_trabajos(){
-    location.href="Html/Trabajos.html"
+    location.href="Trabajos.html"
 }
 
 function redirigir_tfg(){
-    location.href="Html/TFG.html"
+    location.href="TFG.html"
 }
 
 function redirigir_hnb(){
-    location.href="Html/HNB.html"
+    location.href="HNB.html"
 }
 
 function redirigir_linkedin(){
