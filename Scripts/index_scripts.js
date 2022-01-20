@@ -38,23 +38,23 @@ function changeImg(){
 
 
 function redirigir_index(){
-    location.href="index.html"
+    location.href="Html/index.html"
 }
 
 function redirigir_sobremi(){
-    location.href="SobreMi.html"
+    location.href="Html/SobreMi.html"
 }
 
 function redirigir_trabajos(){
-    location.href="Trabajos.html"
+    location.href="Html/Trabajos.html"
 }
 
 function redirigir_tfg(){
-    location.href="TFG.html"
+    location.href="Html/TFG.html"
 }
 
 function redirigir_hnb(){
-    location.href="HNB.html"
+    location.href="Html/HNB.html"
 }
 
 function redirigir_linkedin(){
