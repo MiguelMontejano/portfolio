@@ -1,7 +1,7 @@
 function redirigir_index(){
-    location.href="Html/index.html"
+    location.href="index.html"
 }
 
 function redirigir_trabajos(){
-    location.href="Html/Trabajos.html"
+    location.href="Trabajos.html"
 }
