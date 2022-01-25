@@ -52,7 +52,15 @@ function redirigir_sobremi(){
 }
 
 function redirigir_trabajos(){
-    location.href="Trabajos.html"
+    var sPath = window.location.pathname;
+    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+    if(sPage == "index.html"){
+        window.location.href = "Html/Trabajos.html";
+    }
+    else{
+        location.href="Trabajos.html"
+    }
+    
 }
 
 function redirigir_tfg(){
