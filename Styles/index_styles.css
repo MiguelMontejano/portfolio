@@ -101,13 +101,13 @@
     
     }
     
-    .fa-linkedin, .fa-envelope, .fa-instagram, .fa-twitter{
+    .fa-linkedin, .fa-envelope, .fa-instagram, .fa-github{
         text-shadow:1px 3px rgba(0, 0, 0, 0.281);
         transition: transform 0.1s ease-in-out;
     
     }
     
-    .fa-linkedin:hover, .fa-envelope:hover, .fa-instagram:hover, .fa-twitter:hover{
+    .fa-linkedin:hover, .fa-envelope:hover, .fa-instagram:hover, .fa-github:hover{
         text-shadow:1.2px 4px rgba(0, 0, 0, 0.404);
         cursor: pointer;
         /*transform: translate(0, -0.1vw);*/
@@ -237,7 +237,7 @@
         font-size: 4vw;
     }
 
-    .fa-linkedin, .fa-envelope, .fa-instagram, .fa-twitter{
+    .fa-linkedin, .fa-envelope, .fa-instagram, .fa-github{
         transform: rotate(90deg);
     
     }
