@@ -79,8 +79,8 @@ function redirigir_instagram(){
     window.open("https://www.instagram.com/mimii1323/?hl=es");
 }
 
-function redirigir_twitter(){
-    window.open("https://twitter.com/Mimii1323");
+function redirigir_github(){
+    window.open("https://github.com/MiguelMontejano");
 }
 
 function enviar_mail(){
